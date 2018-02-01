@@ -15,8 +15,6 @@ from django.template.loader import render_to_string
 from .tokens import account_activation_token
 from django.contrib.auth.models import User
 from django.core.mail import EmailMessage
-from . import views 
-
 
 def signup(request):
     if request.method == 'POST':

@@ -22,7 +22,7 @@ from tok import views as tok_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-	url(r'^api-token-auth/', views.obtain_auth_token),
+	url(r'^adminlogin/', views.obtain_auth_token),
 	url(r'^signup/$', views.signup, name='signup'),
 	url(r'^activate/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',views.activate, name='activate'),
 	
